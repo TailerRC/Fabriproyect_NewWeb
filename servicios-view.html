@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabriproyect - Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/servicios.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="/images/logo_nuevo.jpg" alt="Fabriproyect Logo" class="logo">
+                <div class="logo-text">
+                    FABRIPROJECT
+                    <span class="sac">S.A.C.</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="disabled">INICIO</a></li>
+                    <li><a href="#" class="disabled">NOSOTROS</a></li>
+                    <li><a href="/proyecto-view.html">PROYECTOS</a></li>
+                    <li><a href="#" class="active">SERVICIOS</a></li>
+                    <li><a href="/contacto-view.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>SERVICIOS</h1>
+        <div class="breadcrumb">
+            <span>INICIO</span> / SERVICIOS
+        </div>
+        <a href="#contacto" class="btn-contact">CONTÁCTANOS →</a>
+    </section>
+
+    <!-- Services Container -->
+    <div class="services-container">
+        
+        <!-- Servicio de Corte y Doblez -->
+        <div class="service-section">
+            <span class="section-tag">Servicio</span>
+            <h2>SERVICIO DE CORTE Y DOBLEZ</h2>
+            <div class="service-content">
+                <div class="service-info">
+                    <p>Ofrecemos servicio de corte Corte y Doblez de PLANCHAS DE COBRE, BRONCE, ALUMINIO, GALVANIZADAS, ACERO LAC, LAF e INOXIDABLE desde 0.5 mm hasta 12 mm de espesor.</p>
+                    <ul>
+                        <li>Guillotina alemana</li>
+                        <li>Plegadora alemana</li>
+                    </ul>
+                </div>
+                <div class="service-media">
+                    <div class="carousel-container" id="carousel-corte">
+                        <div class="carousel-slide active">
+                            <img src="/images/corte1.jpg" alt="Servicio de Corte 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/corte2.jpg" alt="Servicio de Corte 2">
+                        </div>
+                        
+                        <button class="carousel-nav prev" onclick="changeSlideCarousel('corte', -1)">❮</button>
+                        <button class="carousel-nav next" onclick="changeSlideCarousel('corte', 1)">❯</button>
+                        
+                        <div class="carousel-indicators">
+                            <span class="carousel-indicator active" onclick="goToSlideCarousel('corte', 0)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('corte', 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio de Rolado -->
+        <div class="service-section">
+            <span class="section-tag">Servicio</span>
+            <h2>SERVICIO DE ROLADO DE PLANCHAS Y TUBOS</h2>
+            <div class="service-content">
+                <div class="service-info">
+                    <ul>
+                        <li>Cedula 80 ,40 ,10.</li>
+                        <li>Tubos de acero ,cobre, ,aluminio</li>
+                        <li>En diferentes formas y tamaños rolados para escalera caracol</li>
+                    </ul>
+                </div>
+                <div class="service-media">
+                    <div class="carousel-container single-image-carousel" id="carousel-rolado">
+                        <div class="carousel-slide active">
+                            <img src="/images/rolado1.jpg" alt="Servicio de Rolado">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio de Torneado -->
+        <div class="service-section">
+            <span class="section-tag">Servicio</span>
+            <h2>SERVICIO DE TORNEADO</h2>
+            <div class="service-content">
+                <div class="service-info">
+                    <p>Fabricamos roscas trapeciales y modulares, piñones y anillos en cualquier medida y material. También rectificación de rodillos ,discos ,embragues , roscado de interior y exterior.</p>
+                </div>
+                <div class="service-media">
+                    <div class="carousel-container" id="carousel-torneado">
+                        <div class="carousel-slide active">
+                            <img src="/images/torneado1.jpg" alt="Servicio de Torneado 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/torneado2.jpg" alt="Servicio de Torneado 2">
+                        </div>
+                        
+                        <button class="carousel-nav prev" onclick="changeSlideCarousel('torneado', -1)">❮</button>
+                        <button class="carousel-nav next" onclick="changeSlideCarousel('torneado', 1)">❯</button>
+                        
+                        <div class="carousel-indicators">
+                            <span class="carousel-indicator active" onclick="goToSlideCarousel('torneado', 0)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('torneado', 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" id="contacto">
+            <h2>¿Buscas un servicio de calidad y asequible para su próximo proyecto?</h2>
+            <a href="/contacto-view.html" class="btn-cta">CONSULTE AQUÍ →</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horario de Atención</h3>
+                <p><i class="far fa-clock"></i> Lun. - Sáb. 8:00 - 18:00</p>
+                <p><i class="far fa-calendar"></i> Dom. Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lima - Chorrillos</p>
+                <p>Av. Alipio Ponce Mz. A1 - Lt. 2 Campiñas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:0514670151">051 467 0151</a></p>
+                <p>Llámenos para más información</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2017 Fabriproyect Todos los Derechos Reservados. | Diseñado por: Creativo.pe</p>
+        </div>
+    </footer>
+
+    <script src="/js/servicios.js"></script>
+</body>
+</html>
