@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabriproyect - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="/images/logo_nuevo.jpg" alt="Fabriproyect Logo" class="logo">
+                <div class="logo-text">
+                    FABRIPROJECT
+                    <span class="sac">S.A.C.</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/inicio-view.html">INICIO</a></li>
+                    <li><a href="/nosotros-view.html">NOSOTROS</a></li>
+                    <li><a href="/proyecto-view.html">PROYECTOS</a></li>
+                    <li><a href="/servicios-view.html">SERVICIOS</a></li>
+                    <li><a href="#" class="active">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>CONTACTO</h1>
+        <div class="breadcrumb">
+            <span>INICIO</span> / CONTACTO
+        </div>
+        <a href="proyecto-view.html" class="btn-contact">NUESTROS PROYECTOS →</a>
+    </section>
+
+    <!-- Contact Container -->
+    <div class="contact-container">
+        
+        <!-- Contact Info Grid -->
+        <div class="contact-grid">
+            <!-- Horarios e Información -->
+            <div class="info-card">
+                <h2>Información de Contacto</h2>
+                
+                <div class="info-item">
+                    <i class="far fa-clock"></i>
+                    <div class="info-item-content">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes - Sábado: 8:00 - 18:00<br>Domingo: Cerrado</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-item-content">
+                        <h3>Teléfono</h3>
+                        <p><a href="tel:0514670151">051 467 0151</a><br>Llámenos para más información</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-item-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:administracion@fabriproyect.com">administracion@fabriproyect.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-share-nodes"></i>
+                    <div class="info-item-content">
+                        <h3>Redes Sociales</h3>
+                        <div class="social-links-inline">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="info-card">
+                <h2>Nuestra Ubicación</h2>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-item-content">
+                        <h3>Dirección</h3>
+                        <p>Av. Alipio Ponce Mz. A1 - Lote 2<br>Campiñas, Chorrillos<br>Lima, Perú</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-building"></i>
+                    <div class="info-item-content">
+                        <h3>Datos de la Empresa</h3>
+                        <p>Fabriproyect S.A.C.<br>Ingeniería, Proyectos y Servicios</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="info-item-content">
+                        <h3>Cómo Llegar</h3>
+                        <p>Estamos ubicados en la zona de Campiñas, Chorrillos. Puede encontrarnos fácilmente usando el mapa interactivo abajo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+       <div class="map-section">
+            <h2>UBÍCANOS</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4429287216846!2d-76.9970631!3d-12.1729582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b833484abba1%3A0xce7b1a8c911616e7!2sFabriproyect%20Sac!5e0!3m2!1ses!2spe!4v1699999999999!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <p>Complete el siguiente formulario y nos pondremos en contacto con usted lo antes posible.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Tu Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto *</label>
+                    <input type="text" id="asunto" name="asunto" required placeholder="¿Sobre qué deseas consultarnos?">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">ENVIAR MENSAJE →</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horario de Atención</h3>
+                <p><i class="far fa-clock"></i> Lun. - Sáb. 8:00 - 18:00</p>
+                <p><i class="far fa-calendar"></i> Dom. Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lima - Chorrillos</p>
+                <p>Av. Alipio Ponce Mz. A1 - Lt. 2 Campiñas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:0514670151">051 467 0151</a></p>
+                <p>Llámenos para más información</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2017 Fabriproyect Todos los Derechos Reservados. | Diseñado por: Creativo.pe</p>
+        </div>
+    </footer>
+
+    <script src="/js/contacto.js"></script>
+</body>
+</html>

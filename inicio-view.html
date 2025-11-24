@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabriproyect S.A.C. - Ingeniería y Proyectos Industriales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="/images/logo_nuevo.jpg" alt="Fabriproyect Logo" class="logo">
+                <div class="logo-text">
+                    FABRIPROJECT
+                    <span class="sac">S.A.C.</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">INICIO</a></li>
+                    <li><a href="/nosotros-view.html">NOSOTROS</a></li>
+                    <li><a href="/proyecto-view.html">PROYECTOS</a></li>
+                    <li><a href="/servicios-view.html">SERVICIOS</a></li>
+                    <li><a href="/contacto-view.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero-slider">
+        <div class="hero-slides-container">
+            <div class="hero-slide active" style="background-image: url('images/nosotros1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/nosotros2.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <button class="hero-arrow prev" onclick="moveHeroSlide(-1)">❮</button>
+            
+            <div class="hero-text-wrapper">
+                <span class="hero-subtitle">INGENIERÍA, PROYECTOS Y SERVICIOS</span>
+                <h1>FABRIPROJECT S.A.C.</h1>
+                <p class="hero-description">
+                    Empresa dedicada a la elaboración y ejecución de proyectos relacionados con la ingeniería en los diferentes campos de la industria.
+                </p>
+                <div class="hero-btns">
+                    <a href="/nosotros-view.html" class="btn-primary">SOBRE NOSOTROS</a>
+                    <a href="/servicios-view.html" class="btn-outline">NUESTROS SERVICIOS</a>
+                </div>
+            </div>
+            <button class="hero-arrow next" onclick="moveHeroSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Variedad de Soluciones</h3>
+                    <p>Fabricación de máquinas y equipos industriales adaptados a sus necesidades específicas.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Calidad y Garantía</h3>
+                    <p>Producto directo de fábrica, sin intermediarios. Atención personalizada en todo el territorio nacional.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-users-gear"></i>
+                    </div>
+                    <h3>Personal Calificado</h3>
+                    <p>Contamos con un equipo técnico confiable con años de presencia en el mercado y sólida imagen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="container">
+            <div class="detail-row">
+                <div class="detail-content">
+                    <span class="section-tag">Nuestros Productos</span>
+                    <h2>FABRICACIÓN DE MÁQUINAS Y EQUIPOS</h2>
+                    <p>Ofrecemos una completa línea de artículos que satisface en costo y calidad todas las necesidades de su planta.</p>
+                    <ul class="custom-list">
+                        <li><i class="fas fa-check"></i> Marmitas en Acero Inoxidable</li>
+                        <li><i class="fas fa-check"></i> Lavaderos Industriales</li>
+                        <li><i class="fas fa-check"></i> Fajas Transportadoras</li>
+                        <li><i class="fas fa-check"></i> Tanques en Acero Inoxidables</li>
+                    </ul>
+                </div>
+                <div class="detail-image">
+                    <img src="images/corte2.jpg" alt="Maquinaria Industrial">
+                </div>
+            </div>
+
+            <div class="detail-row reverse">
+                <div class="detail-content">
+                    <span class="section-tag">Compromiso</span>
+                    <h2>SEGURIDAD Y ASESORÍA INTEGRAL</h2>
+                    
+                    <div class="info-box">
+                        <div class="box-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h4>Calidad Garantizada</h4>
+                            <p>Brindamos asesoría necesaria, personalizada y adecuada a la necesidad del cliente ofreciendo soluciones confiables.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="box-icon"><i class="fas fa-helmet-safety"></i></div>
+                        <div>
+                            <h4>Seguridad Ocupacional</h4>
+                            <p>Trabajamos con competencia, responsabilidad y controlando la seguridad con capacitaciones periódicas anuales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-image">
+                    <img src="images/8.jpg" alt="Seguridad Industrial">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <h2>¿Buscas un servicio de calidad y asequible para su próximo proyecto?</h2>
+                <p>Contáctenos hoy mismo para una evaluación personalizada.</p>
+            </div>
+            <a href="/contacto-view.html" class="btn-white">CONSULTE AQUÍ <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horario de Atención</h3>
+                <p><i class="far fa-clock"></i> Lun. - Sáb. 8:00 - 18:00</p>
+                <p><i class="far fa-calendar"></i> Dom. Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lima - Chorrillos</p>
+                <p>Av. Alipio Ponce Mz. A1 - Lt. 2 Campiñas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:0514670151">051 467 0151</a></p>
+                <p>Llámenos para más información</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2017 Fabriproyect Todos los Derechos Reservados. | Diseñado por: Creativo.pe</p>
+        </div>
+    </footer>
+    <script src="/js/inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabriproyect - Nuestros Proyectos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/proyecto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="/images/logo_nuevo.jpg" alt="Fabriproyect Logo" class="logo">
+            <div class="logo-text">
+                FABRIPROJECT
+                <span class="sac">S.A.C.</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/inicio-view.html">INICIO</a></li>
+                <li><a href="/nosotros-view.html">NOSOTROS</a></li>
+                <li><a href="#" class="active">PROYECTOS</a></li>
+                <li><a href="/servicios-view.html">SERVICIOS</a></li>
+                <li><a href="/contacto-view.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>NUESTROS PROYECTOS</h1>
+        <div class="breadcrumb">
+            <span>INICIO</span> / NUESTROS PROYECTOS
+        </div>
+        <a href="#contacto" class="btn-contact">CONTÁCTANOS →</a>
+    </section>
+
+    <!-- Projects Container -->
+    <div class="projects-container">
+        
+        <!-- Ingeniería Básica -->
+        <div class="project-section">
+            <span class="section-tag">Servicios</span>
+            <h2>INGENIERÍA BÁSICA</h2>
+            <div class="project-content">
+                <div class="project-info">
+                    <ul>
+                        <li>Criterios de diseño</li>
+                        <li>Estudios de campo</li>
+                        <li>Anteproyectos</li>
+                        <li>Equipamiento básico</li>
+                        <li>Presupuestos estimados</li>
+                    </ul>
+                </div>
+                <div class="project-media">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/sj_hLy6KDR0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyectos Llave en Mano -->
+        <div class="project-section">
+            <span class="section-tag">Proyectos</span>
+            <h2>PROYECTOS LLAVE EN MANO</h2>
+            <div class="project-content">
+                <div class="project-info">
+                    <p>Desde la ingeniería básica hasta el detalle, conjuntamente con la fabricación, transporte, montaje electro – mecánico pruebas en vacío y con carga. Finalizando con la entrega en funcionamiento del proyecto terminado al cliente.</p>
+                </div>
+                <div class="project-media">
+                    <div class="carousel-container" id="carousel-llave">
+                        <div class="carousel-slide active">
+                            <img src="images/1.jpg" alt="Proyecto Llave en Mano 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/2.jpg" alt="Proyecto Llave en Mano 2">
+                        </div>
+                        
+                        <button class="carousel-nav prev" onclick="changeSlideCarousel('llave', -1)">❮</button>
+                        <button class="carousel-nav next" onclick="changeSlideCarousel('llave', 1)">❯</button>
+                        
+                        <div class="carousel-indicators">
+                            <span class="carousel-indicator active" onclick="goToSlideCarousel('llave', 0)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('llave', 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mantenimiento -->
+        <div class="project-section">
+            <span class="section-tag">Servicios</span>
+            <h2>MANTENIMIENTO</h2>
+            <div class="project-content">
+                <div class="project-info">
+                    <p>Brindamos servicios integral de mantenimiento a diversas compañías en el rubro industrial, alimentarias, productos de limpieza, colorantes naturales, agropecuarias etc. Contamos con personal especializado y con supervisores experimentados para proveer mantenimiento por proyecto, paradas de planta o por evento.</p>
+                </div>
+                <div class="project-media">
+                    <div class="carousel-container single-image-carousel" id="carousel-mantenimiento">
+                        <div class="carousel-slide active">
+                            <img src="images/3.jpg" alt="Mantenimiento Industrial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diversos Equipos de Proceso -->
+        <div class="project-section">
+            <span class="section-tag">Equipos</span>
+            <h2>DIVERSOS EQUIPOS DE PROCESO</h2>
+            <div class="project-content">
+                <div class="project-info">
+                    <div class="equipment-list">
+                        <ul style="margin: 0;">
+                            <li>Tanques de almacenamiento</li>
+                            <li>Tanques reactivos</li>
+                            <li>Tanques a vacío</li>
+                            <li>Hornos de secado</li>
+                            <li>Horno rotativo de secado a vacío</li>
+                            <li>Filtro prensa</li>
+                            <li>Atomizadores</li>
+                            <li>Autoclaves</li>
+                        </ul>
+                        <ul style="margin: 0;">
+                            <li>Intercambiador de calor tubular y placas</li>
+                            <li>Mezcladores helicoidales</li>
+                            <li>Mezcladores tipo pantalón</li>
+                            <li>Serpentines tubulares</li>
+                            <li>Faja transportadoras</li>
+                            <li>Tolva cilíndricas</li>
+                            <li>Plataformas de Acero</li>
+                            <li>Red de tuberías</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-media">
+                    <div class="carousel-container" id="carousel-equipos">
+                        <div class="carousel-slide active">
+                            <img src="images/4.jpg" alt="Equipo 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/5.jpg" alt="Equipo 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/6.jpg" alt="Equipo 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/7.jpg" alt="Equipo 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/8.jpg" alt="Equipo 5">
+                        </div>
+                        
+                        <button class="carousel-nav prev" onclick="changeSlideCarousel('equipos', -1)">❮</button>
+                        <button class="carousel-nav next" onclick="changeSlideCarousel('equipos', 1)">❯</button>
+                        
+                        <div class="carousel-indicators">
+                            <span class="carousel-indicator active" onclick="goToSlideCarousel('equipos', 0)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('equipos', 1)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('equipos', 2)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('equipos', 3)"></span>
+                            <span class="carousel-indicator" onclick="goToSlideCarousel('equipos', 4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" id="contacto">
+            <h2>¿Buscas un servicio de calidad y asequible para su próximo proyecto?</h2>
+            <a href="/contacto-view.html" class="btn-cta">CONSULTE AQUÍ →</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horario de Atención</h3>
+                <p><i class="far fa-clock"></i> Lun. - Sáb. 8:00 - 18:00</p>
+                <p><i class="far fa-calendar"></i> Dom. Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lima - Chorrillos</p>
+                <p>Av. Alipio Ponce Mz. A1 - Lt. 2 Campiñas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:0514670151">051 467 0151</a></p>
+                <p>Llámenos para más información</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2017 Fabriproyect Todos los Derechos Reservados. | Diseñado por: Creativo.pe</p>
+        </div>
+    </footer>
+
+    <script src="/js/proyecto.js"></script>
+</body>
+</html>
